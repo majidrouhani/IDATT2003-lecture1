@@ -1,11 +1,7 @@
-package edu.ntnu.idatt2001.lectures;
+package edu.ntnu.idatt2001.lectures.aggregation;
 
 import java.util.ArrayList;
 import java.util.List;
-
-import edu.ntnu.idatt2001.lectures.aggregation.PostalAddress;
-import edu.ntnu.idatt2001.lectures.aggregation.Student;
-import edu.ntnu.idatt2001.lectures.aggregation.StudentName;
 
 /**
  *

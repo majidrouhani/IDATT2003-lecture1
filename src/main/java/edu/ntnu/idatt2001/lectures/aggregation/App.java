@@ -1,5 +1,7 @@
 package edu.ntnu.idatt2001.lectures.aggregation;
 
+import java.time.LocalDate;
+import java.time.Month;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -9,18 +11,12 @@ import java.util.List;
 public class App 
 {
 	public static void main(String[] args) {
-		List<Student> studenter = new ArrayList<Student>();
+		List<Student> students = new ArrayList<Student>();
 		
-		StudentName name1 = new StudentName("Odd Even","Primtallet");
-		PostalAddress postalAddress1 = new PostalAddress(7000,"Trondheim");
+		students = AppData.getData();
 
-		StudentName name2 = new StudentName("Huppasahn","DelFinito");
-		PostalAddress postalAddress2 = new PostalAddress(7001,"Trondheim");
-		
-		Student student1 = new Student(name1,postalAddress1);
-		studenter.add(student1);
-		
-		Student student2 = new Student(name2,postalAddress2);		
-		studenter.add(student2);
+		for (Student student:students) {
+			System.out.println(student.getUniqueIdasString());
+		}
 	}
 }

@@ -31,8 +31,8 @@ public class AppTest
 
 		PostalAddress postalAddress1 = new PostalAddress(7000,"Trondheim");
 
-        assertEquals("Trondheim",postalAddress1.getPostalAddress());
-        assertEquals(7000,postalAddress1.getPostalCode());
+        assertEquals("Trondheim",postalAddress1.getAddress());
+        assertEquals(7000,postalAddress1.getCode());
     }
 
 }

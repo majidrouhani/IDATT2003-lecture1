@@ -5,24 +5,24 @@ package edu.ntnu.idatt2001.lectures.aggregation;
 */
 
 public class PostalAddress {
-  private final int postalCode;
-  private final String postalAddress;
+  private final int code;
+  private final String address;
 
   public PostalAddress(int postalCode, String postalAddress) {
-    this.postalCode = postalCode;
-    this.postalAddress = postalAddress;
+    this.code = postalCode;
+    this.address = postalAddress;
   }
 
-  public int getPostalCode() {
-    return postalCode;
+  public int getCode() {
+    return code;
   }
 
-  public String getPostalAddress() {
-    return postalAddress;
+  public String getAddress() {
+    return address;
   }
 
   @Override
   public String toString() {
-    return "PostalAddress [postalCode=" + postalCode + ", postalAddress=" + postalAddress + "]";
+    return "PostalAddress [postalCode=" + code + ", postalAddress=" + address + "]";
   }
 }

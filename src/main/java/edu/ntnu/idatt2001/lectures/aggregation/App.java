@@ -2,19 +2,27 @@ package edu.ntnu.idatt2001.lectures.aggregation;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.logging.Logger;
 
 /**
  *
  */
-public class App 
-{
+public class App {
+
+	private static final Logger LOGGER = Logger.getLogger(App.class.getName());
+
+	/**
+	 * @param args
+	 */
 	public static void main(String[] args) {
-		List<Student> students = new ArrayList<Student>();
-		
+
+		LOGGER.info("Logger Name: " + LOGGER.getName());
+
+		List<Student> students = new ArrayList<>();
 		students = AppData.getData();
 
-		for (Student student:students) {
-			System.out.println(student.getUniqueIdasString());
+		for (Student student : students) {
+			LOGGER.info(student.getUniqueIdasString());
 		}
 	}
 }

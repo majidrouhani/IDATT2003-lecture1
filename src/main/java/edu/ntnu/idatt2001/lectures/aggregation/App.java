@@ -1,7 +1,5 @@
 package edu.ntnu.idatt2001.lectures.aggregation;
 
-import java.time.LocalDate;
-import java.time.Month;
 import java.util.ArrayList;
 import java.util.List;
 

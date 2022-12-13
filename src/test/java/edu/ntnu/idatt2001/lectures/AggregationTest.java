@@ -1,13 +1,16 @@
-package edu.ntnu.idatt2001.lectures.aggregation;
+package edu.ntnu.idatt2001.lectures;
 
 import static org.junit.Assert.assertEquals;
 
 import org.junit.Test;
 
+import edu.ntnu.idatt2001.lectures.aggregation.PostalAddress;
+import edu.ntnu.idatt2001.lectures.aggregation.StudentName;
+
 /**
  * Unit test for simple App.
  */
-public class AppTest 
+public class AggregationTest 
 {
     /**
      * Test create student

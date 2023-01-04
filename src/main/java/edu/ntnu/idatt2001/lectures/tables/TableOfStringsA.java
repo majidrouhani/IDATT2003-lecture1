@@ -1,6 +1,14 @@
 package edu.ntnu.idatt2001.lectures.tables;
 
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
+/**
+ * The correct way of managing strings
+ */
 public class TableOfStringsA {
+	private static final Logger logger = Logger.getLogger(TableOfStringsA.class.getName());
+
 	private String[] nameList = new String[5];
 
 	public TableOfStringsA() {
@@ -17,8 +25,8 @@ public class TableOfStringsA {
 			String name = nameList[i];
 			for (int j=i+1; j<totalNames;j++) {
 				String thisName = nameList[j];
-				if (name == thisName) {
-					System.out.println(name + " er duplicat");
+				if (name.equals(thisName)) {
+					logger.log(Level.INFO,"{0} er duplicat", name);
 				}
 			}
 		}

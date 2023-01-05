@@ -11,7 +11,7 @@ import edu.ntnu.idatt2001.lectures.aggregation.Student;
 
 public class App {
 
-	private static final Logger LOGGER = Logger.getLogger(App.class.getName());
+	private static final Logger logger = Logger.getLogger(App.class.getName());
 
 	public static void main(String[] args) {
 		
@@ -27,10 +27,10 @@ public class App {
 
 		String studentId = "1998-03-15-DelFinito-Huppasahn-F";
 
-		LOGGER.log(Level.INFO,"Student exist: {0}",studentHashmap.containsKey(studentId));
+		logger.log(Level.INFO,"Student exist: {0}",studentHashmap.containsKey(studentId));
 
 		studentHashmap.remove(studentId); 
-		LOGGER.log(Level.INFO,"Student exist: {0}",studentHashmap.containsKey(studentId));
+		logger.log(Level.INFO,"Student exist: {0}",studentHashmap.containsKey(studentId));
 	}
 }
 

@@ -1,8 +1,8 @@
 package edu.ntnu.idatt2001.lectures;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 import edu.ntnu.idatt2001.lectures.aggregation.PostalAddress;
 import edu.ntnu.idatt2001.lectures.aggregation.StudentName;

@@ -1,4 +1,4 @@
-package edu.ntnu.idatt2001.lectures.tables;
+package edu.ntnu.idatt2001.lectures.tables.strings;
 
 import java.util.logging.Logger;
 import java.util.logging.Level;

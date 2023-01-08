@@ -32,7 +32,7 @@ public class AggregationTest
     public void createPostalAddressTest()
     {
 
-		Address postalAddress1 = new Address(7000,"Trondheim");
+		Address postalAddress1 = new Address(7000,"Trondheim","Sør-Trøndelag");
 
         assertEquals("Trondheim",postalAddress1.getCity());
         assertEquals(7000,postalAddress1.getZipCode());

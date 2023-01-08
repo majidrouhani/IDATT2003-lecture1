@@ -9,8 +9,8 @@ import java.util.List;
 
 import org.junit.jupiter.api.Test;
 
-import edu.ntnu.idatt2001.lectures.aggregation.AppData;
-import edu.ntnu.idatt2001.lectures.aggregation.Student;
+import edu.ntnu.idatt2001.lectures.example1.aggregation.AppData;
+import edu.ntnu.idatt2001.lectures.example1.aggregation.Student;
 
 
 /**

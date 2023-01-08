@@ -1,6 +1,9 @@
-package edu.ntnu.idatt2001.lectures.aggregation;
+package edu.ntnu.idatt2001.lectures.example1.composition;
 
 import java.time.LocalDate;
+
+import edu.ntnu.idatt2001.lectures.example1.utils.Address;
+import edu.ntnu.idatt2001.lectures.example1.utils.Name;
 
 /**
  * Student.java  - "Programmering i Java", 4.utgave - 2009-07-01
@@ -11,16 +14,16 @@ import java.time.LocalDate;
  */
 
 public class Student {
-  private final StudentName studentName;
-  private final PostalAddress postalAddress;
+  private final Name name;
+  private final Address address;
   private final LocalDate birthday;
   private final String gender; 
 
-  public Student(StudentName studentName, PostalAddress postalAddress, LocalDate birthday, String gender) {
-    this.studentName = studentName;
-    this.postalAddress = postalAddress;
+  public Student(String firstname, String lastname, LocalDate birthday, String gender, int zipCode, String city, String state) {
+    this.name = new Name(firstname, lastname);
     this.birthday = birthday;
     this.gender = gender;
+    this.address = new Address(zipCode, city, state);
   }
 
   public String getGender() {
@@ -31,11 +34,11 @@ public class Student {
   }
 
   public String getLastname() {
-    return studentName.getLastname();
+    return name.getLastname();
   }
 
   public String getFirstname() {
-    return studentName.getFirstname();
+    return name.getFirstname();
   }
 
 	public String getUniqueIdasString() {
@@ -45,7 +48,7 @@ public class Student {
 
   @Override
   public String toString() {
-    return "Student [studentName=" + studentName + ", postalAddress=" + postalAddress + ", birthday=" + birthday
+    return "Student [studentName=" + name + ", postalAddress=" + address + ", birthday=" + birthday
         + ", gender=" + gender + "]";
   }
 }

@@ -1,9 +1,12 @@
-package edu.ntnu.idatt2001.lectures.aggregation;
+package edu.ntnu.idatt2001.lectures.example1.aggregation;
 
 import java.time.LocalDate;
 import java.time.Month;
 import java.util.ArrayList;
 import java.util.List;
+
+import edu.ntnu.idatt2001.lectures.example1.utils.Address;
+import edu.ntnu.idatt2001.lectures.example1.utils.Name;
 
 public class AppData {
 
@@ -14,15 +17,15 @@ public class AppData {
     public static List<Student> getData() {
         List<Student> data = new ArrayList<>();
 
-        StudentName name1 = new StudentName("Odd Even", "Primtallet");
-        PostalAddress postalAddress1 = new PostalAddress(7000, "Trondheim");
+        Name name1 = new Name("Odd Even", "Primtallet");
+        Address postalAddress1 = new Address(7000, "Trondheim", "Sør-Trøndelag");
         LocalDate birthday1 = LocalDate.of(1990, Month.JANUARY, 5);
 
         Student student1 = new Student(name1, postalAddress1, birthday1, "M");
         data.add(student1);
 
-        StudentName name2 = new StudentName("Huppasahn", "DelFinito");
-        PostalAddress postalAddress2 = new PostalAddress(7001, "Trondheim");
+        Name name2 = new Name("Huppasahn", "DelFinito");
+        Address postalAddress2 = new Address(7001, "Trondheim", "Sør-Trøndelag");
         LocalDate birthday2 = LocalDate.of(1998, Month.MARCH, 15);
 
         Student student2 = new Student(name2, postalAddress2, birthday2, "F");

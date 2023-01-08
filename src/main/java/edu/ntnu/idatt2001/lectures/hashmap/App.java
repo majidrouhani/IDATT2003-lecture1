@@ -6,8 +6,8 @@ import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-import edu.ntnu.idatt2001.lectures.aggregation.AppData;
-import edu.ntnu.idatt2001.lectures.aggregation.Student;
+import edu.ntnu.idatt2001.lectures.example1.aggregation.AppData;
+import edu.ntnu.idatt2001.lectures.example1.aggregation.Student;
 
 public class App {
 

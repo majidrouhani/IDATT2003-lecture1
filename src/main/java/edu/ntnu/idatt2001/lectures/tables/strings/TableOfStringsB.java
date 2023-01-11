@@ -11,11 +11,11 @@ public class TableOfStringsB {
 	private String[] nameList = new String[5];
 
 	public TableOfStringsB() {
-		this.nameList[0] = "Hanne";
-		this.nameList[1] = "Berit";
-		this.nameList[2] = "Hans";
-		this.nameList[3] = "Hanne";
-		this.nameList[4] = "Berit";
+		this.nameList[0] = new String("Hanne");
+		this.nameList[1] = new String("Berit");
+		this.nameList[2] = new String("Hans");
+		this.nameList[3] = new String("Hanne");
+		this.nameList[4] = new String("Berit");
 	}
 
 	public void printDuplicates() {

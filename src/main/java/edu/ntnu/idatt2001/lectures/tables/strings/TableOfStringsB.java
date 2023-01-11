@@ -25,7 +25,7 @@ public class TableOfStringsB {
 			for (int j=i+1; j<totalNames;j++) {
 				String thisName = nameList[j];
 				if (name == thisName) {
-					logger.log(Level.INFO,"{0} er duplicat", name);
+					logger.log(Level.INFO,"{0} er duplikat", name);
 				}
 			}
 		}

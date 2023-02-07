@@ -1,6 +1,7 @@
 package edu.ntnu.idatt2001.lectures.example1.composition;
 
 import java.time.LocalDate;
+import java.time.Period;
 
 import edu.ntnu.idatt2001.lectures.example1.utils.Address;
 import edu.ntnu.idatt2001.lectures.example1.utils.Name;
@@ -29,16 +30,25 @@ public class Student {
   public String getGender() {
     return gender;
   }
+  
   public LocalDate getBirthday() {
     return birthday;
   }
 
+  public int getAge() {
+    LocalDate curDate = LocalDate.now(); 
+    return Period.between(birthday, curDate).getYears(); 
+  }
   public String getLastname() {
     return name.getLastname();
   }
 
   public String getFirstname() {
     return name.getFirstname();
+  }
+
+  public String getName() {
+    return name.getName();
   }
 
 	public String getUniqueIdasString() {

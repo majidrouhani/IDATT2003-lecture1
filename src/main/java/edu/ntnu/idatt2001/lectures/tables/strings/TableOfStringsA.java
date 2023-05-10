@@ -3,14 +3,19 @@ package edu.ntnu.idatt2001.lectures.tables.strings;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-/**
- * The correct way of managing strings
+/*
+ * TableOfStringsA.java - "Programmering i Java", 4.utgave - 2009-07-01
  */
 public class TableOfStringsA {
+	// Logger for å skrive ut meldinger til konsollen
 	private static final Logger logger = Logger.getLogger(TableOfStringsA.class.getName());
 
+	// En tabell med navn
 	private String[] nameList = new String[5];
 
+	/**
+	 * Konstruktør som initialiserer tabellen med navn
+	 */
 	public TableOfStringsA() {
 		this.nameList[0] = "Hanne";
 		this.nameList[1] = "Berit";
@@ -19,6 +24,9 @@ public class TableOfStringsA {
 		this.nameList[4] = "Berit";
 	}
 
+	/**
+	 * Metode som skriver ut alle navnene i tabellen
+	 */
 	public void printDuplicates() {
 		int totalNames = nameList.length;
 		for (int i = 0; i < totalNames; i++) {

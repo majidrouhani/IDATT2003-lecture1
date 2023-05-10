@@ -8,12 +8,22 @@ import java.util.List;
 import edu.ntnu.idatt2001.lectures.example1.utils.Address;
 import edu.ntnu.idatt2001.lectures.example1.utils.Name;
 
+/**
+ * AppData.java - "Programmering i Java", 4.utgave - 2009-07-01
+ * 
+ * A class that represents a student.
+ * 
+ */
 public class AppData {
-
+    
     private AppData() {
         throw new IllegalStateException("AppData class");
     }
 
+    /**
+     * getData() returnerer en liste med studentobjekter.
+     * @return data
+     */
     public static List<Student> getData() {
         List<Student> data = new ArrayList<>();
 

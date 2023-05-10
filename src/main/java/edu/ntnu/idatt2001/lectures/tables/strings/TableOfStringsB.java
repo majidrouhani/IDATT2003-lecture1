@@ -4,12 +4,16 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 /**
- * The wrong way of managing strings
+ * TableOfStringsB.java - "Programmering i Java", 4.utgave - 2009-07-01
  */
 public class TableOfStringsB {
+	// Logger for å skrive ut feilmeldinger
 	private static final Logger logger = Logger.getLogger(TableOfStringsB.class.getName());
+	
+	// En tabell med navn
 	private String[] nameList = new String[5];
 
+	// Konstruktør som initialiserer tabellen med navn
 	public TableOfStringsB() {
 		this.nameList[0] = new String("Hanne");
 		this.nameList[1] = new String("Berit");
@@ -18,6 +22,7 @@ public class TableOfStringsB {
 		this.nameList[4] = new String("Berit");
 	}
 
+	// Metode som skriver ut alle navnene i tabellen
 	public void printDuplicates() {
 		int totalNames = nameList.length;
 		for (int i = 0; i < totalNames; i++) {

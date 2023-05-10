@@ -1,14 +1,9 @@
 package edu.ntnu.idatt2001.lectures.tables.strings;
 
-import java.util.logging.Level;
-import java.util.logging.Logger;
-
 /*
  * TableOfStringsA.java - "Programmering i Java", 4.utgave - 2009-07-01
  */
 public class TableOfStringsA {
-	// Logger for å skrive ut meldinger til konsollen
-	private static final Logger logger = Logger.getLogger(TableOfStringsA.class.getName());
 
 	// En tabell med navn
 	private String[] nameList = new String[5];
@@ -34,7 +29,7 @@ public class TableOfStringsA {
 			for (int j=i+1; j<totalNames;j++) {
 				String thisName = nameList[j];
 				if (name.equals(thisName)) {
-					logger.log(Level.INFO,"{0} er duplikat", name);
+					System.out.printf("%s er duplikat", name);
 				}
 			}
 		}

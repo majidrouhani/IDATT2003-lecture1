@@ -3,8 +3,6 @@ package edu.ntnu.idatt2001.lectures.hashmap;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 
 import edu.ntnu.idatt2001.lectures.example1.aggregation.AppData;
 import edu.ntnu.idatt2001.lectures.example1.aggregation.Student;
@@ -15,8 +13,6 @@ import edu.ntnu.idatt2001.lectures.example1.aggregation.Student;
  * Klasse som inneholder main-metoden for applikasjonen.
  */
 public class App {
-
-	private static final Logger logger = Logger.getLogger(App.class.getName());
 
 	/**
 	 * Main-metode som starter applikasjonen.
@@ -37,10 +33,10 @@ public class App {
 
 		String studentId = "1998-03-15-DelFinito-Huppasahn-F";
 
-		logger.log(Level.INFO,"Student exist: {0}",studentHashmap.containsKey(studentId));
+		System.out.printf("Student exist: %s",studentHashmap.containsKey(studentId));
 
 		studentHashmap.remove(studentId); 
-		logger.log(Level.INFO,"Student exist: {0}",studentHashmap.containsKey(studentId));
+		System.out.printf("Student exist: %s",studentHashmap.containsKey(studentId));
 	}
 }
 

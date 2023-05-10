@@ -2,8 +2,6 @@ package edu.ntnu.idatt2001.lectures.tables.objects;
 
 import java.time.LocalDate;
 import java.time.Month;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 
 import edu.ntnu.idatt2001.lectures.example1.aggregation.Student;
 import edu.ntnu.idatt2001.lectures.example1.utils.Address;
@@ -15,9 +13,6 @@ import edu.ntnu.idatt2001.lectures.example1.utils.Name;
  * Klasse som inneholder main-metoden for applikasjonen.
  */
 public class App {
-
-  // Logger for å skrive ut informasjon til konsollen
-  private static final Logger logger = Logger.getLogger(App.class.getName());
 
   /**
    * Main-metode som starter applikasjonen.
@@ -41,7 +36,7 @@ public class App {
     students[1] = new Student(name2, postalAddress2, birthday2, "F");
 
     for (Student student : students) {
-      logger.log(Level.INFO, "Student ID: {0}", student.getUniqueIdasString());
+      System.out.printf( "Student ID: %s", student.getUniqueIdasString());
     }
   }
 }

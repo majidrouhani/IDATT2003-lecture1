@@ -15,13 +15,17 @@ public class Student {
   private final Name name;
   private final Address address;
   private final LocalDate birthday;
-  private final String gender; 
+  private final String gender;
 
   /*
    * Constructor: Oppretter et studentobjekt.
+   * 
    * @param name
+   * 
    * @param address
+   * 
    * @param birthday
+   * 
    * @param gender
    */
   public Student(Name name, Address address, LocalDate birthday, String gender) {
@@ -33,6 +37,7 @@ public class Student {
 
   /**
    * getName() returnerer studentens navn.
+   * 
    * @return name
    */
   public String getGender() {
@@ -41,6 +46,7 @@ public class Student {
 
   /**
    * getAddress() returnerer studentens adresse.
+   * 
    * @return address
    */
 
@@ -50,6 +56,7 @@ public class Student {
 
   /**
    * getBirthday() returnerer studentens fødselsdato.
+   * 
    * @return birthday
    */
   public String getLastname() {
@@ -58,6 +65,7 @@ public class Student {
 
   /**
    * getFirstname() returnerer studentens fornavn.
+   * 
    * @return
    */
   public String getFirstname() {
@@ -66,12 +74,13 @@ public class Student {
 
   /**
    * getFullname() returnerer studentens fullt navn.
+   * 
    * @return
    */
   public String getUniqueIdasString() {
-		return this.getBirthday().toString() + "-" + this.getLastname()+"-"+this.getFirstname()+"-"+this.getGender();
-	}
-
+    return this.getBirthday().toString() + "-" + this.getLastname() + "-" + this.getFirstname() + "-"
+        + this.getGender();
+  }
 
   @Override
   public String toString() {

@@ -1,0 +1,30 @@
+@startuml
+
+class Student {
+  - final Name name;
+  - final Address address;
+  - final LocalDate birthday;
+  - final String gender;
+
+  + Student(String firstname, String lastname, LocalDate birthday, String gender, int zipCode, String city,
+      String state);
+}
+
+class Name {
+  - {static} final String WHITESPACE = " ";
+  - final String firstname;
+  - final String lastname;
+  - final String fullname;
+
+  +Name(String firstname, String lastname);
+}
+
+class Address {
+  - final int zipCode;
+  - final String city;
+  - final String state;
+
+  +Address(int zipCode, String city, String state);
+}
+
+@enduml

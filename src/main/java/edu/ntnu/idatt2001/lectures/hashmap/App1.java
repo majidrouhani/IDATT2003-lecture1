@@ -5,7 +5,6 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import edu.ntnu.idatt2001.lectures.example1.aggregation.AppData;
 import edu.ntnu.idatt2001.lectures.example1.aggregation.Student;
 
 /**
@@ -13,7 +12,7 @@ import edu.ntnu.idatt2001.lectures.example1.aggregation.Student;
  * <p>
  * Klasse som inneholder main-metoden for applikasjonen.
  */
-public class App {
+public class App1 {
 
 	/**
 	 * Main-metode som starter applikasjonen.
@@ -22,22 +21,15 @@ public class App {
 	 */
 	public static void main(String[] args) {
 		
-		List<Student> data = new ArrayList<>();
+		Map<String,Student> data = new HashMap<>();
 		data = AppData.getData();
-
-		Map<String,Student> studentHashmap = new HashMap<>();
-
-		for (Student student:data) {
-			studentHashmap.put(student.getUniqueIdasString(),student);
-		}
-
 
 		String studentId = "1998-03-15-DelFinito-Huppasahn-F";
 
-		System.out.printf("Student exist: %s",studentHashmap.containsKey(studentId));
+		System.out.printf("Student exist: %s",data.containsKey(studentId));
 
-		studentHashmap.remove(studentId); 
-		System.out.printf("Student exist: %s",studentHashmap.containsKey(studentId));
+		data.remove(studentId); 
+		System.out.printf("Student exist: %s",data.containsKey(studentId));
 	}
 }
 

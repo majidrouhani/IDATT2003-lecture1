@@ -1,11 +1,11 @@
-package edu.ntnu.idatt2001.lectures.hashmap;
+package edu.ntnu.idatt2003.lectures.hashmap;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import edu.ntnu.idatt2001.lectures.example1.aggregation.Student;
+import edu.ntnu.idatt2003.lectures.example1.aggregation.Student;
 
 /**
  * App.java - "Programmering i Java", 4.utgave - 2009-07-01

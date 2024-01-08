@@ -1,4 +1,4 @@
-package edu.ntnu.idatt2001.lectures;
+package edu.ntnu.idatt2003.lectures;
 
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
@@ -9,8 +9,8 @@ import java.util.List;
 
 import org.junit.jupiter.api.Test;
 
-import edu.ntnu.idatt2001.lectures.example1.aggregation.AppData;
-import edu.ntnu.idatt2001.lectures.example1.aggregation.Student;
+import edu.ntnu.idatt2003.lectures.example1.aggregation.AppData;
+import edu.ntnu.idatt2003.lectures.example1.aggregation.Student;
 
 /**
  * Unit test for simple App.

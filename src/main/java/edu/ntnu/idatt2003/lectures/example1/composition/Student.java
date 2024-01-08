@@ -1,10 +1,10 @@
-package edu.ntnu.idatt2001.lectures.example1.composition;
+package edu.ntnu.idatt2003.lectures.example1.composition;
 
 import java.time.LocalDate;
 import java.time.Period;
 
-import edu.ntnu.idatt2001.lectures.example1.utils.Address;
-import edu.ntnu.idatt2001.lectures.example1.utils.Name;
+import edu.ntnu.idatt2003.lectures.example1.utils.Address;
+import edu.ntnu.idatt2003.lectures.example1.utils.Name;
 
 /**
  * Student.java - "Programmering i Java", 4.utgave - 2009-07-01

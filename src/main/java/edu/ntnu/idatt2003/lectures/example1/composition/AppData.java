@@ -1,4 +1,4 @@
-package edu.ntnu.idatt2001.lectures.example1.composition;
+package edu.ntnu.idatt2003.lectures.example1.composition;
 
 import java.time.LocalDate;
 import java.time.Month;

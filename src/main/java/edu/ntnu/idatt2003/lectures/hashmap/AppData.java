@@ -1,13 +1,13 @@
-package edu.ntnu.idatt2001.lectures.hashmap;
+package edu.ntnu.idatt2003.lectures.hashmap;
 
 import java.time.LocalDate;
 import java.time.Month;
 import java.util.HashMap;
 import java.util.Map;
 
-import edu.ntnu.idatt2001.lectures.example1.aggregation.Student;
-import edu.ntnu.idatt2001.lectures.example1.utils.Address;
-import edu.ntnu.idatt2001.lectures.example1.utils.Name;
+import edu.ntnu.idatt2003.lectures.example1.aggregation.Student;
+import edu.ntnu.idatt2003.lectures.example1.utils.Address;
+import edu.ntnu.idatt2003.lectures.example1.utils.Name;
 
 /**
  * AppData.java - "Programmering i Java", 4.utgave - 2009-07-01

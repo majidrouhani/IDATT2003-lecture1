@@ -1,4 +1,4 @@
-package edu.ntnu.idatt2001.lectures.hashmap;
+package edu.ntnu.idatt2003.lectures.hashmap;
 
 import java.util.*;
 

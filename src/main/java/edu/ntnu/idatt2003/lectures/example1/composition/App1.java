@@ -1,6 +1,5 @@
-package edu.ntnu.idatt2001.lectures.example1.aggregation;
+package edu.ntnu.idatt2003.lectures.example1.composition;
 
-import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -8,19 +7,19 @@ import java.util.List;
  * <p>
  * Klasse som inneholder main-metoden for applikasjonen.
  */
-public class App {
+public class App1 {
+
 	/**
 	 * Main-metode som starter applikasjonen.
 	 *
 	 * @param args
 	 */
 	public static void main(String[] args) {
-
-		List<Student> students = new ArrayList<>();
+		List<Student> students;
 		students = AppData.getData();
 
 		for (Student student : students) {
-			System.out.printf("Student ID: %s",student.getUniqueIdasString());
+			System.out.printf("Student ID: %s", student.getUniqueIdasString());
 		}
 	}
 }

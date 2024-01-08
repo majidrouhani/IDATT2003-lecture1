@@ -1,9 +1,9 @@
-package edu.ntnu.idatt2001.lectures.example1.aggregation;
+package edu.ntnu.idatt2003.lectures.example1.aggregation;
 
 import java.time.LocalDate;
 
-import edu.ntnu.idatt2001.lectures.example1.utils.Address;
-import edu.ntnu.idatt2001.lectures.example1.utils.Name;
+import edu.ntnu.idatt2003.lectures.example1.utils.Address;
+import edu.ntnu.idatt2003.lectures.example1.utils.Name;
 
 /**
  * Student.java - "Programmering i Java", 4.utgave - 2009-07-01

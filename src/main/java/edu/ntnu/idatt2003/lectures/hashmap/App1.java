@@ -1,8 +1,5 @@
 package edu.ntnu.idatt2003.lectures.hashmap;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 
 import edu.ntnu.idatt2003.lectures.example1.aggregation.Student;
@@ -20,8 +17,7 @@ public class App1 {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		
-		Map<String,Student> data = new HashMap<>();
+		Map<String,Student> data;
 		data = AppData.getData();
 
 		String studentId = "1998-03-15-DelFinito-Huppasahn-F";

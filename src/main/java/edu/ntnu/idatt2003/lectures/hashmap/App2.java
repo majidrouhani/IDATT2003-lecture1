@@ -8,7 +8,7 @@ import java.util.*;
  * Klasse som inneholder main-metoden for applikasjonen.
  */
 public class App2 {
-    public static void main(String args[]) {
+    public static void main(String[] args) {
         App2 arrayListVsHashMap = new App2();
         arrayListVsHashMap.proceed();
     }

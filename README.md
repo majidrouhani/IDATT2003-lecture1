@@ -3,9 +3,7 @@
 
 - Aggregatiom
 - Composition
-- HashMap
-- Table of strings
-- Table of objects
+- ArrayList/HashMap
 
 
 ## Aggregatiom
@@ -16,5 +14,5 @@ Objects are created fom other objects
 
 Other objects are created within the main object
 
-## HashMap
+## ArrayList/HashMap
 Use of ArrayList and HashMap

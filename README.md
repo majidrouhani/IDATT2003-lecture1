@@ -17,11 +17,4 @@ Objects are created fom other objects
 Other objects are created within the main object
 
 ## HashMap
-
-
-## Table of strings
-
-
-## Table of objects
-
-
+Use of ArrayList and HashMap
